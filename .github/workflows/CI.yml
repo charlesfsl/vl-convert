@@ -8,7 +8,7 @@ on:
 
 jobs:
   vl-convert-rs-example2:
-    runs-on: ubuntu-22.04
+    runs-on: macos-latest
     container:
       image: ubuntu:22.04
     steps:
