@@ -20,7 +20,9 @@
     devShells.default = pkgs.mkShell {
       buildInputs = [
         locales
+        pkgs.rustup
         pkgs.cargo
+        pkgs.lldb
       ] ++ optional stdenv.isLinux inotify-tools
       ++ optional stdenv.isDarwin terminal-notifier
       ++ optionals stdenv.isDarwin (with darwin.apple_sdk.frameworks; [
