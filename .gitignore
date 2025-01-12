@@ -20,3 +20,6 @@ scratch/
 
 # File generated to check for
 CI.yaml
+
+# Nix
+result
