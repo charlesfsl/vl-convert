@@ -20,11 +20,13 @@ commands:
 
 jobs:
   vl-convert-rs-example2:
-    - code-setup
-    run: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
-    run: . "$HOME/.cargo/env"
-    run: cd vl-convert-rs
-    run: cargo run --example conversion_sequence
+    executor: test-container
+    steps:
+      - code-setup
+      run: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+      run: . "$HOME/.cargo/env"
+      run: cd vl-convert-rs
+      run: cargo run --example conversion_sequence
 
 workflows:
   test-suite:
