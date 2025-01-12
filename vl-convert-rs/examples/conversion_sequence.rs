@@ -1,7 +1,7 @@
 use vl_convert_rs::converter::VlOpts;
 use vl_convert_rs::{VlConverter, VlVersion};
 
-#[tokio::main]
+#[tokio::main(flavor = "current_thread")]
 async fn main() {
     let vl_spec: serde_json::Value = serde_json::from_str(
         r#"
