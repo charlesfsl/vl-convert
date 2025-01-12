@@ -1,6 +1,6 @@
 # Reproducing segmentation fault locally
 
-# Setup Rust build environment
+## Setup Rust environment
 I added a `flake.nix` file to set this up for me, but do however you want.
 
 1. Install [Nix](https://nixos.org/download.html)
