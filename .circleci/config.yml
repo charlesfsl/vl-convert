@@ -4,11 +4,14 @@ parameters:
   elixir-image:
     type: string
     default: hexpm/elixir:1.17.3-erlang-27.0.1-debian-bookworm-20241202
+  ubuntu-image:
+    type: string
+    default: ubuntu:22.04
 
 executors:
   test-container:
     docker:
-      - image: << pipeline.parameters.elixir-image >>
+      - image: << pipeline.parameters.ubuntu-image >>
 
 commands:
   code-setup:
