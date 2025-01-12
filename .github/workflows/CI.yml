@@ -20,6 +20,7 @@ jobs:
           . "$HOME/.cargo/env"
           cd vl-convert-rs
           cargo run --example conversion_sequence
+          
   # python-fmt:
   #   runs-on: ubuntu-latest
   #   steps:
