@@ -8,9 +8,9 @@ on:
 
 jobs:
   vl-convert-rs-example2:
-    runs-on: macos-latest
+    runs-on: ubuntu-22.04
     container:
-      image: ubuntu:22.04
+      image: hexpm/elixir:1.17.3-erlang-27.0.1-debian-bookworm-20241202
     steps:
       - uses: actions/checkout@v2
       - run: |
